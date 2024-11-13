@@ -4354,6 +4354,8 @@ with pkgs;
     inherit (darwin.apple_sdk.frameworks) Security;
   };
 
+  libgraph = callPackage ../development/libraries/libgraph { };
+
   libhandy = callPackage ../development/libraries/libhandy { };
 
   # Needed for apps that still depend on the unstable verison of the library (not libhandy-1)
